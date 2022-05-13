@@ -58,6 +58,20 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              blurRadius: 5,
+              color: Colors.black26.withOpacity(0.5),
+              offset: Offset(0, -2.5),
+            )
+          ],
+          color: Colors.white,
+        ),
+        padding: const EdgeInsets.all(20),
+        child: Text('Some stuff'),
+      ),
     );
   }
 }
